@@ -2,11 +2,11 @@ package controllers
 
 import (
   "net/http"
-  "encoding/json"
-  "github.com/gorilla/mux"
-  "strconv"
-  "github.com/amar-jay/first-go-crud-v2/packages/models"
-  "github.com/amar-jay/first-go-crud-v2/packages/utils"
+_  "encoding/json"
+_  "github.com/gorilla/mux"
+_  "strconv"
+_  "github.com/amar-jay/first-go-crud-v2/packages/models"
+_  "github.com/amar-jay/first-go-crud-v2/packages/utils"
 )
 func GetAllMovies(w http.ResponseWriter, r *http.Request){
   w.Header().Set("Content-Type", "application/json")

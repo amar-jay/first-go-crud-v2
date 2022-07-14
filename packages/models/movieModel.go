@@ -2,7 +2,7 @@ package models
 
 import (
 	"github.com/amar-jay/first-go-crud-v2/packages/config"
-	"github.com/jinzhu/gorm"
+  "gorm.io/gorm"
 )
 
 var db *gorm.DB
@@ -27,7 +27,7 @@ func init()  {
 }
 
 func CreateMovie(movie *Movie) *Movie {
-  db.NewRecord(movie)
+ // db.NewRecord(movie)
   db.Create(&movie)
   return movie 
 }

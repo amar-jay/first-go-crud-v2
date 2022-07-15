@@ -11,11 +11,10 @@ type Movie struct {
   gorm.Model
   Id string `json:"id"`
   Name string `gorm:"" json:"name"`
-  Director Director `json:"director"`
+  Director string `json:"director"`
 }
 
 type Director struct {
-  gorm.Model
   FirstName string `json:"firstname"`
   Surname string `json:"surname"`
 }
